@@ -23,7 +23,7 @@ public class SimpleDotCom
                 INCREMENT the number of hits
                 // FIND OUT if it was the last location cell:
                 IF number of hits is 3, RETURN “kill” as the result
-                ELSE it was not a kill, so RETURN“hit”
+                ELSE it was not a kill, so RETURN “hit”
                 END IF
             ELSE the user guess did not match, so RETURN “miss”
             END IF
