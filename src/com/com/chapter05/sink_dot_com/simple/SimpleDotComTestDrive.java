@@ -16,7 +16,6 @@ public class SimpleDotComTestDrive
     public static void main(String[] args)
     {
         SimpleDotCom dot = new SimpleDotCom();
-
         int[] locations = {2, 3, 4};
         dot.setLocationCells(locations);
 
@@ -24,7 +23,7 @@ public class SimpleDotComTestDrive
         String result = dot.checkYourself(userGuess);
         String testResult = "failed";
 
-        if (result.equals("hit")) {
+        if (result.equals("hit") || result.equals("kill")) {
             testResult = "passed";
         }
 
