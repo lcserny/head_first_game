@@ -1,9 +1,9 @@
-package com.com.chapter05.sink_dot_com.simple;
+package com.com.chapter05.SimpleDotCom;
 
 /**
  * Created by user on 20.01.2016.
  */
-public class SimpleDotComGame
+public class Game
 {
     /*
     METHOD public static void main (String [] args)
@@ -38,17 +38,17 @@ X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-
 X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X
 
         DECLARE an int variable to hold the number of user guesses, named numOfGuesses, set it to 0.
-        MAKE a new SimpleDotCom instance
+        MAKE a new DotCom instance
         COMPUTE a random number between 0 and 4 that will be the starting location cell position
         MAKE an int array with 3 ints using the randomly-generated number, that number incremented by 1,
         and that number incremented by 2 (example: 3,4,5)
-        INVOKE the setLocationCells() method on the SimpleDotCom instance
+        INVOKE the setLocationCells() method on the DotCom instance
         DECLARE a boolean variable representing the state of the game, named isAlive. SET it to true
 
         WHILE the dot com is still alive (isAlive == true) :
             GET user input from the command line
             // CHECK the user guess
-            INVOKE the checkYourself() method on the SimpleDotCom instance
+            INVOKE the checkYourself() method on the DotCom instance
             INCREMENT numOfGuesses variable
             // CHECK for dot com death
             IF result is “kill”
@@ -65,7 +65,7 @@ X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-
         int numOfGuesses = 0;
         GameHelper helper = new GameHelper();
 
-        SimpleDotCom dotCom = new SimpleDotCom();
+        DotCom dotCom = new DotCom();
         int randomNum = (int) (Math.random() * 5);
 
         int[] locations = {randomNum, randomNum+1, randomNum+2};

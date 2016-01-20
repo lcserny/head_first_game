@@ -1,9 +1,9 @@
-package com.com.chapter05.sink_dot_com.simple;
+package com.com.chapter05.SimpleDotCom;
 
 /**
  * Created by user on 19.01.2016.
  */
-public class SimpleDotCom
+public class DotCom
 {
     /*
     DECLARE an int array to hold the location cells. Call it locationCells.

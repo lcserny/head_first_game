@@ -1,13 +1,13 @@
-package com.com.chapter05.sink_dot_com.simple;
+package com.com.chapter05.SimpleDotCom;
 
 /**
  * Created by user on 20.01.2016.
  */
-public class SimpleDotComGameTest
+public class GameTest
 {
     public static void main(String[] args)
     {
-        SimpleDotComGame game = new SimpleDotComGame();
+        Game game = new Game();
         try {
             game.main(args);
         } catch (Exception e) {
