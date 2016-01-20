@@ -1,4 +1,6 @@
-package com.com.chapter05.SimpleDotCom;
+package com.SimpleDotCom;
+
+import java.util.ArrayList;
 
 /**
  * Created by user on 20.01.2016.
@@ -68,7 +70,11 @@ X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-
         DotCom dotCom = new DotCom();
         int randomNum = (int) (Math.random() * 5);
 
-        int[] locations = {randomNum, randomNum+1, randomNum+2};
+        ArrayList<String> locations = new ArrayList<String>();
+        locations.add(Integer.toString(randomNum));
+        locations.add(Integer.toString(randomNum + 1));
+        locations.add(Integer.toString(randomNum + 2));
+
         dotCom.setLocationCells(locations);
         boolean isAlive = true;
 

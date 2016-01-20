@@ -1,4 +1,4 @@
-package com.com.chapter05.SimpleDotCom;
+package com.SimpleDotCom;
 
 /**
  * Created by user on 20.01.2016.

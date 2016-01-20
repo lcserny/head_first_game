@@ -1,4 +1,6 @@
-package com.com.chapter05.SimpleDotCom;
+package com.SimpleDotCom;
+
+import java.util.ArrayList;
 
 /**
  * Created by user on 19.01.2016.
@@ -16,7 +18,12 @@ public class DotComTest
     public static void main(String[] args)
     {
         DotCom dot = new DotCom();
-        int[] locations = {2, 3, 4};
+
+        ArrayList<String> locations = new ArrayList<String>();
+        locations.add("2");
+        locations.add("3");
+        locations.add("4");
+
         dot.setLocationCells(locations);
 
         String userGuess = "2";

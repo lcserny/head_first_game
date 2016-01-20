@@ -1,4 +1,4 @@
-package com.com.chapter05.SimpleDotCom;
+package com.SimpleDotCom;
 
 import java.io.*;
 

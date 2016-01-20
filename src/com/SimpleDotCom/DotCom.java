@@ -1,4 +1,6 @@
-package com.com.chapter05.SimpleDotCom;
+package com.SimpleDotCom;
+
+import java.util.ArrayList;
 
 /**
  * Created by user on 19.01.2016.
@@ -36,29 +38,26 @@ public class DotCom
     END METHOD
      */
 
-    int[] locationCells;
-    int numOfHits = 0;
+    private ArrayList<String> locationCells;
 
-    public void setLocationCells(int[] cells)
+    public void setLocationCells(ArrayList<String> cells)
     {
         locationCells = cells;
     }
 
     public String checkYourself(String userGuess)
     {
-        int guess = Integer.parseInt(userGuess);
         String result = "miss";
+        int index = locationCells.indexOf(userGuess);
 
-        for (int cell : locationCells) {
-            if (guess == cell) {
+        if (index >= 0) {
+            locationCells.remove(index);
+
+            if (locationCells.isEmpty()) {
+                result = "kill";
+            } else {
                 result = "hit";
-                numOfHits++;
-                break;
             }
-        }
-
-        if (numOfHits == locationCells.length) {
-            result = "kill";
         }
 
         System.out.println(result);
