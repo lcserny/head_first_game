@@ -7,9 +7,9 @@ public class GameTest
 {
     public static void main(String[] args)
     {
-        Game game = new Game();
+        DotComBust dotComBust = new DotComBust();
         try {
-            game.main(args);
+            dotComBust.main(args);
         } catch (Exception e) {
             // don't know how to test this
             System.out.println(e.getMessage());
