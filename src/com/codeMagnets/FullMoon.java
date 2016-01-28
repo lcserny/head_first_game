@@ -14,9 +14,9 @@ public class FullMoon
     {
         Calendar c = Calendar.getInstance();
         c.set(2004, 0, 7, 15, 40);
+        long day1 = c.getTimeInMillis();
 
         for (int x = 0; x < 60; x++) {
-            long day1 = c.getTimeInMillis();
             day1 += (DAY_IM * 29.52);
             c.setTimeInMillis(day1);
 
