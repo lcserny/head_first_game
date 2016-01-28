@@ -93,7 +93,10 @@ public class DotComBust
         System.out.println("Try to sink them all in the fewest number of guesses");
 
         for (DotCom dotCom : dotComList) {
-            ArrayList<String> newLocation = helper.placeDotCom();
+            ArrayList<String> newLocation = helper.placeDotCom(3);
+
+System.out.println(newLocation);
+
             dotCom.setLocationCells(newLocation);
         }
     }

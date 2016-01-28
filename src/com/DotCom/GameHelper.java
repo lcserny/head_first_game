@@ -10,7 +10,7 @@ import java.util.ArrayList;
  */
 public class GameHelper
 {
-    private static final String alphabet = "abcdef";
+    private static final String alphabet = "abcdefg";
     private int gridLength = 7;
     private int gridSize = 49;
     private int[] grid = new int[gridSize];
@@ -60,7 +60,7 @@ public class GameHelper
         while (x < comSize) {
             grid[coords[x]] = 1;
             row = (int) (coords[x] / gridLength);
-            column = coords[x] & gridLength;
+            column = coords[x] % gridLength;
             temp = String.valueOf(alphabet.charAt(column));
 
             alphaCells.add(temp.concat(Integer.toString(row)));

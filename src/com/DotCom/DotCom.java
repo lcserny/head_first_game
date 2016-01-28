@@ -23,7 +23,7 @@ public class DotCom
     public String checkYourself(String userGuess)
     {
         String result = "miss";
-        int index = locationCells.indexOf(userGuess);
+        int index = locationCells.indexOf(userGuess.toLowerCase());
 
         if (index >= 0) {
             locationCells.remove(index);
