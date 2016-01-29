@@ -11,13 +11,21 @@ public class MyDrawPanel extends JPanel
     public void paintComponent(Graphics graphics)
     {
         Graphics2D graphics2D = (Graphics2D) graphics;
-        GradientPaint gradientPaint = new GradientPaint(70, 70, Color.blue, 150, 150, Color.orange);
+
+        int red = (int) (Math.random() * 255);
+        int green = (int) (Math.random() * 255);
+        int blue = (int) (Math.random() * 255);
+        Color startColor = new Color(red, green, blue);
+
+        red = (int) (Math.random() * 255);
+        green = (int) (Math.random() * 255);
+        blue = (int) (Math.random() * 255);
+        Color endColor = new Color(red, green, blue);
+
+        GradientPaint gradientPaint = new GradientPaint(70, 70, startColor, 150, 150, endColor);
 
         graphics2D.setPaint(gradientPaint);
         graphics2D.fillOval(70, 70, 100, 100);
-
-        graphics.setColor(Color.orange);
-        graphics.fillRect(130, 130, 100, 100);
     }
 
     public static void main(String[] args)
