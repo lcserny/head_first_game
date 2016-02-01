@@ -84,7 +84,6 @@ public class MiniMusicPlayerThree
                 return;
             }
 
-            Graphics2D graphics2D = (Graphics2D) graphics;
             int red = (int) (Math.random() * 250);
             int green = (int) (Math.random() * 250);
             int blue = (int) (Math.random() * 250);
@@ -93,6 +92,7 @@ public class MiniMusicPlayerThree
             int x = (int) ((Math.random() * 40) + 10);
             int y = (int) ((Math.random() * 40) + 10);
 
+            Graphics2D graphics2D = (Graphics2D) graphics;
             graphics2D.setColor(new Color(red, green, blue));
             graphics2D.fillRect(x, y, height, width);
 
