@@ -1,4 +1,4 @@
-package com.persistance;
+package com.persistence;
 
 import java.io.FileOutputStream;
 import java.io.ObjectOutputStream;
