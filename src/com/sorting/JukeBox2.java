@@ -3,36 +3,36 @@ package com.sorting;
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Comparator;
+import java.util.*;
 
 /**
  * Created by user on 08.02.2016.
  */
-public class JukeBox1
+public class JukeBox2
 {
     ArrayList<Song> songList = new ArrayList<Song>();
 
     public static void main(String[] args)
     {
-        new JukeBox1().go();
+        new JukeBox2().go();
     }
 
     public void go()
     {
         getSongs();
 
-        ArtistCompare artistCompare = new ArtistCompare();
-        Collections.sort(songList, artistCompare);
-
+        Collections.sort(songList);
         System.out.println(songList);
+
+        TreeSet<Song> songSet = new TreeSet<Song>();
+        songSet.addAll(songList);
+        System.out.println(songSet);
     }
 
     void getSongs()
     {
         try {
-            File file = new File("SongList.txt");
+            File file = new File("SongListMore.txt");
             BufferedReader reader = new BufferedReader(new FileReader(file));
             String line = null;
             while ((line = reader.readLine()) != null) {
