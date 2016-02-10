@@ -20,7 +20,8 @@ public class MyRemoteImpl extends UnicastRemoteObject implements MyRemote
     }
 
     /**
-     * Needs RMI registry running, run in terminal with: rmiregistry
+     * Needs RMI registry running,
+     * Run in terminal from output path of classes with: rmiregistry
      * @param args
      */
     public static void main(String[] args)
