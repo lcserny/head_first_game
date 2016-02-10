@@ -8,8 +8,7 @@ import java.rmi.Naming;
 public class MyRemoteClient
 {
     /**
-     * Step 2
-     * Build me second and run!
+     * Run this after registry and service are running
      * @param args
      */
     public static void main(String[] args)

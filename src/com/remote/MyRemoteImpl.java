@@ -20,9 +20,7 @@ public class MyRemoteImpl extends UnicastRemoteObject implements MyRemote
     }
 
     /**
-     * Step 1
-     * Build me first, then run (from src: rmic com.remote.MyRemoteImpl)
-     * Next run in terminal: rmiregistry
+     * Needs RMI registry running, run in terminal with: rmiregistry
      * @param args
      */
     public static void main(String[] args)
